@@ -14,12 +14,13 @@ import "/imports/ui/stylesheets/framework/bootstrap3/js/bootstrap.js";
 
 import "/imports/ui/stylesheets/framework/bootstrap3-plugins/plugins.js";
 
+this.globalOnRendered = function() {};
 
-
-this.globalOnRendered = function() {
-	
-};
-
-Meteor.startup(function() {
-	
+Meteor.startup(() => {
+  /*
+    navigator.serviceWorker
+    .register("/sw.js")
+    .then()
+    .catch(error => console.log("ServiceWorker registration failed: ", err));
+  */
 });
